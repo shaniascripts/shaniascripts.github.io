@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Meta Front-End Developer – Module 1: Introduction to Front-End Development"
-date: 2025-10-16
+date: 2025-10-15
 ---
 
 Today I completed **Module 1** of Meta’s *Front-End Developer Professional Certificate* on Coursera.  
