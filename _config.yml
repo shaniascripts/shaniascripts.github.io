@@ -1,3 +1,15 @@
 title: "Shania Scripts"
 description: "A personal coding blog and portfolio where I share projects, lessons, and insights from my journey into software engineering."
 theme: minima
+
+header_pages:
+  - about.md
+  - projects.md
+
+author:
+  name: "Shania Thomas"
+  email: "thomasshania91@gmail.com"
+
+minima:
+  social_links:
+    - { platform: github,   user_url: "https://github.com/shaniascripts" }
