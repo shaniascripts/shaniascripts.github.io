@@ -1,0 +1,18 @@
+---
+---
+@import "minima";
+
+/* Personal blog styling tweaks */
+body {
+  background-color: #fef6f9;
+  color: #333;
+  font-family: "Verdana";
+}
+
+a {
+  color: #c86380;
+}
+
+.post-title {
+  font-weight: 700;
+}
