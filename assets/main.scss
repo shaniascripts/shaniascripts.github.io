@@ -86,3 +86,8 @@ pre, code {
 .site-footer .footer-col-1 p:first-child {
   display: none;
 }
+
+/* Hide the extra site URL line under the title */
+.site-description {
+  display: none;
+}
