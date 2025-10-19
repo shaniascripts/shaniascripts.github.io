@@ -8,11 +8,11 @@
 /* ===== Brand palette (soft rose) ===== */
 :root {
   --bg: #337357;         /* page background */
-  --ink: #222;           /* main text */
-  --muted: #666;         /* secondary text */
-  --accent: #c86380;     /* links / accents */
+  --ink: #6d9f71;           /* main text */
+  --muted: #6d9f77;         /* secondary text */
+  --accent: #ea9ab2;     /* links / accents */
   --accent-ink: #9b3f5a; /* hover */
-  --card: #ea9ab2;       /* cards / posts */
+  --card: #e8b5c4;       /* cards / posts */
   --border: #efd6df;     /* subtle borders */
 }
 
@@ -92,4 +92,4 @@ pre, code {
   display: none;
 }
 
-/* Version: 1.1 */
+/* Version: 1.2 */
