@@ -92,31 +92,26 @@ pre, code {
   display: none;
 }
 
-/* === Right-side hero photo (desktop only) === */
-.page-content .wrapper { position: relative; }  /* anchor for absolute positioning */
+/* Right-side portrait (desktop) */
+.page-content .wrapper { position: relative; }
 
-.hero-photo {
-  display: none;             /* hidden by default (mobile) */
-}
+.hero-photo { display: none; }
 
 @media (min-width: 900px) {
  .hero-photo {
   display: block;
   position: absolute;
-  top: 110px;
-  right: 0;
+  top: 100px;
+  right: 10px;
   width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 30%;
   box-shadow: 0 10px 25px rgba(0,0,0,.12);
-  }
+  border: 3px solid rgba(255,255,255,.7);
 }
 
-  /* give the posts some right margin so they don't run under the photo */
-  .home .post-list {
-    margin-right: 260px;     /* ~ image width + spacing */
-  }
-}
+.home .post-list { margin-right: 220px; }
 
-/* Version: 1.4 */
+/* Version: 1.5 */
