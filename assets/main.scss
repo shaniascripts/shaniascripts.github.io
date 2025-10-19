@@ -1,0 +1,80 @@
+---
+---
+@import "minima";
+
+/* ===== Brand palette (soft rose) ===== */
+:root {
+  --bg: #fef6f9;         /* page background */
+  --ink: #222;           /* main text */
+  --muted: #666;         /* secondary text */
+  --accent: #c86380;     /* links / accents */
+  --accent-ink: #9b3f5a; /* hover */
+  --card: #ffffff;       /* cards / posts */
+  --border: #efd6df;     /* subtle borders */
+}
+
+/* ===== Base ===== */
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+               "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+/* Contain the layout a bit more nicely */
+.wrapper, .page-content {
+  max-width: 860px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* ===== Header/Nav ===== */
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: #fff8fbcc;
+  backdrop-filter: saturate(130%) blur(2px);
+}
+.site-title { font-weight: 700; letter-spacing: .2px; }
+.site-nav .page-link { padding: 6px 10px; }
+.site-nav .page-link:hover { color: var(--accent-ink); }
+
+/* ===== Links ===== */
+a { color: var(--accent); }
+a:hover { color: var(--accent-ink); text-decoration: none; }
+
+/* ===== Post list (home) ===== */
+.home .post-list > li {
+  list-style: none;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 18px 6px;
+  margin: 14px 0;
+  box-shadow: 0 1px 0 rgba(0,0,0,.02);
+}
+.post-link { font-weight: 700; }
+
+/* ===== Single post ===== */
+.post-title { font-weight: 800; }
+.post-content h2, .post-content h3 { margin-top: 1.25em; }
+.post-meta { color: var(--muted); }
+
+/* ===== Code blocks ===== */
+pre, code {
+  background: #fff;
+  border: 1px solid var(--border);
+}
+.highlighter-rouge pre {
+  border-radius: 8px;
+  padding: 14px;
+  overflow-x: auto;
+}
+
+/* ===== Footer cleanup ===== */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: #fff8fb;
+}
+.site-footer .footer-col p { margin: 0.4rem 0; }
