@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Meta Front-End Developer – Module 2: HTML and CSS in Depth"
-date: 2025-10-16
+date: 2025-10-15
 ---
 
 Today I started **Module 2** of Meta’s *Front-End Developer Professional Certificate* on Coursera — and it’s already way more hands-on! 💻  
@@ -35,9 +35,3 @@ Here’s a small example I made during practice:
     <a href="https://shaniascripts.github.io">Visit my blog</a>
   </body>
 </html>
-body {
-  background-color: #fef6f9;
-  color: #333;
-  font-family: 'Verdana';
-  text-align: center;
-}
