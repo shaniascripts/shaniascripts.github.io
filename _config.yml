@@ -6,10 +6,9 @@ header_pages:
   - about.md
   - projects.md
 
-author:
-  name: "Shania Thomas"
-  email: "thomasshania91@gmail.com"
+author: "Shania Thomas"     # <-- make this a plain string
+email: "thomasshania91@gmail.com"   # <-- move email to top-level
 
 minima:
   social_links:
-    - { platform: github,   user_url: "https://github.com/shaniascripts" }
+    - { platform: github, user_url: "https://github.com/shaniascripts" }
