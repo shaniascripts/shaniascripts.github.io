@@ -7,13 +7,13 @@ date: 2025-10-15
 Today I completed **Module 1** of Meta’s *Front-End Developer Professional Certificate* on Coursera.  
 This module introduced the foundations of web development and the key tools used to build modern websites.
 
-### 🫷😵‍💫🫸 What I Learned
+###🫷😵‍💫🫸What I Learned
 - The difference between **front-end** and **back-end** development  
 - How websites work and how browsers render HTML, CSS, and JavaScript  
 - The importance of accessibility and responsive design  
 - An overview of developer tools like VS Code and Chrome DevTools
 
-### ✨ Practice Highlights
+###✨Practice Highlights
 I built a simple “Hello World” webpage using HTML and experimented with headings, paragraphs, and lists.  
 It was my first time writing real code in a web editor — and it felt amazing to see the page appear in my browser!
 
