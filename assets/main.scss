@@ -92,4 +92,31 @@ pre, code {
   display: none;
 }
 
+/* === Right-side hero photo (desktop only) === */
+.page-content .wrapper { position: relative; }  /* anchor for absolute positioning */
+
+.hero-photo {
+  display: none;             /* hidden by default (mobile) */
+}
+
+@media (min-width: 900px) {
+ .hero-photo {
+  display: block;
+  position: absolute;
+  top: 110px;
+  right: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+  }
+}
+
+  /* give the posts some right margin so they don't run under the photo */
+  .home .post-list {
+    margin-right: 260px;     /* ~ image width + spacing */
+  }
+}
+
 /* Version: 1.4 */
