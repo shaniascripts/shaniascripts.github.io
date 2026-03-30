@@ -1,0 +1,46 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Software Engineer Portfolio - Systems & Full Stack" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- Inter Font: The gold standard for clean tech portfolios -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-zinc-950 text-zinc-100 antialiased">
+		<!-- The 'slot' is where your Hero and ProjectGrid will be injected -->
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--accent: 45, 212, 191; /* Teal-400 */
+	}
+	
+	html {
+		font-family: 'Inter', system-ui, sans-serif;
+		background: #0a0a0a;
+		scroll-behavior: smooth;
+	}
+
+	/* Selection color: This makes highlighted text look "pro" */
+	::selection {
+		background-color: rgba(var(--accent), 0.3);
+		color: white;
+	}
+</style>

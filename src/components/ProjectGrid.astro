@@ -1,0 +1,53 @@
+---
+const projects = [
+  {
+    title: "Sensor-Sync-Kernel",
+    description: "High-concurrency C++ utility for multi-sensor data synchronization. Optimized for sub-millisecond latency and minimal memory overhead.",
+    tags: ["C++", "Linux Systems", "Multithreading"],
+    size: "md:col-span-2",
+    icon: "⚙️"
+  },
+  {
+    title: "Portfolio V2",
+    description: "Component-based architecture focused on performance and SEO.",
+    tags: ["Astro", "Tailwind", "TypeScript"],
+    size: "col-span-1",
+    icon: "🚀"
+  },
+  {
+    title: "Full-Stack Data Engine",
+    description: "Automated data pipelines with real-time PostgreSQL updates.",
+    tags: ["Node.js", "SQL", "CI/CD"],
+    size: "col-span-1",
+    icon: "📡"
+  }
+];
+---
+
+<section id="projects" class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 pb-24">
+  {projects.map((project) => (
+    <div class={`${project.size} bento-card p-8 group`}>
+      <div class="flex flex-col h-full justify-between">
+        <div>
+          <div class="text-3xl mb-4 group-hover:scale-110 transition-transform inline-block">
+            {project.icon}
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-white group-hover:text-teal-400 transition-colors">
+            {project.title}
+          </h3>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+            {project.description}
+          </p>
+        </div>
+        
+        <div class="flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span class="px-3 py-1 text-[10px] font-black uppercase tracking-widest bg-zinc-950 border border-zinc-800 rounded-lg text-teal-500/80">
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  ))}
+</section>

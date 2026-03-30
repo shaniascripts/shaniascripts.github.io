@@ -1,0 +1,41 @@
+---
+// 1. The Shell: Wraps your site in the <html> and <head> tags
+import Layout from '../layouts/Layout.astro';
+
+// 2. The Content: The specific "blocks" of your portfolio
+import Hero from '../components/Hero.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+
+// 3. The Style: Connects your Tailwind and custom CSS rules
+import '../styles/global.css';
+---
+
+<Layout title="Shania | Software Engineer">
+	<!-- This 'main' container controls the overall flow of the page -->
+	<main class="bg-zinc-950 min-h-screen">
+		
+		<!-- Section 1: Hero (The first thing they see) -->
+		<Hero />
+
+		<!-- Section 2: Portfolio Grid (The proof of your work) -->
+		<section class="max-w-6xl mx-auto py-24 px-6 md:px-12">
+			<div class="flex items-center gap-6 mb-16">
+				<h2 class="text-3xl font-extrabold text-white tracking-tight">
+					Technical Systems
+				</h2>
+				<!-- This creates that sleek horizontal line seen in high-end portfolios -->
+				<div class="h-[1px] flex-1 bg-zinc-800"></div>
+			</div>
+			
+			<ProjectGrid />
+		</section>
+
+		<!-- Section 3: Simple Footer -->
+		<footer class="py-12 border-t border-zinc-900 text-center">
+			<p class="text-zinc-500 text-sm font-medium tracking-wide">
+				&copy; {new Date().getFullYear()} SHANIA SCRIPTS // BUILT FOR SCALE
+			</p>
+		</footer>
+
+	</main>
+</Layout>
