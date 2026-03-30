@@ -18,4 +18,4 @@ jobs:
       - name: Install, build, and upload with Astro
         uses: withastro/action@v3
         with:
-           package-manager: npm install --legacy-peer-deps
+           resolve-unmet-dependencies: true
